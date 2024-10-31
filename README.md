@@ -65,13 +65,13 @@ S-AES的实现
 逆列混淆：使用特定的逆列混淆算法进行操作。
 逆轮密钥加：最后将密文数组与原始密钥数组进行异或操作，即lunmiyaojia(ciphertextArray, keyArray)。
 三、算法核心函数说明
-yihuo8(int* a, int* b)：//对两个 8 位的整数数组进行异或操作，返回异或后的结果数组。
-yihuo4(int* a, int* b)：//对两个 4 位的整数数组进行异或操作，返回异或后的结果数组。
-s_he_tihuan(int* temp)：//使用 S 盒对输入的 8 位整数数组进行替换操作。
-zuoyi(int** temp)：//对输入的二维整数数组进行循环左移操作。
-g(int* temp, int* rcon)：//对输入的密钥数组进行一系列操作，包括循环左移、S 盒替换和轮常数异或。
-liehunxiao(int** mingwen)：//对输入的明文数组进行列混淆操作。
-lunmiyaojia(int** mingwen, int** key)：//对输入的明文数组和密钥数组进行轮密钥加操作。
+···yihuo8(int* a, int* b)：//对两个 8 位的整数数组进行异或操作，返回异或后的结果数组。
+···yihuo4(int* a, int* b)：//对两个 4 位的整数数组进行异或操作，返回异或后的结果数组。
+···s_he_tihuan(int* temp)：//使用 S 盒对输入的 8 位整数数组进行替换操作。
+···zuoyi(int** temp)：//对输入的二维整数数组进行循环左移操作。
+···g(int* temp, int* rcon)：//对输入的密钥数组进行一系列操作，包括循环左移、S 盒替换和轮常数异或。
+···liehunxiao(int** mingwen)：//对输入的明文数组进行列混淆操作。
+···lunmiyaojia(int** mingwen, int** key)：//对输入的明文数组和密钥数组进行轮密钥加操作。
 通过以上加密和解密过程，本程序实现了对二进制字符串的加密和解密功能，确保了数据的安全性。
 ### 接口说明
 #### 加密接口：encode
